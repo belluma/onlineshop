@@ -13,12 +13,10 @@ public class ShopController {
     public ResponseEntity<> getMainView(){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
-
     @GetMapping("category")
     public ResponseEntity<>getCategoryView(@RequestParam String category){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
-
     @GetMapping("details")
     public ResponseEntity<>getDetailsView(@RequestParam String productId){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
@@ -28,10 +26,10 @@ public class ShopController {
     public ResponseEntity<> getBasketView(){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
-
     @PutMapping
     public ResponseEntity<> addToBasket(@RequestBody Product product){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
+
 
 }
