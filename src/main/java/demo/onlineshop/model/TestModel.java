@@ -1,14 +1,25 @@
 package demo.onlineshop.model;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@Table(name="test")
 public class TestModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
     private String testProperty;
     private long testNumber;
 
     public TestModel(String testProperty, long testNumber) {
         this.testProperty = testProperty;
         this.testNumber = testNumber;
+    }
+
+    public TestModel() {
+
     }
 
     public long getTestNumber() {
