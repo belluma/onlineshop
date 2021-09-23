@@ -10,24 +10,24 @@ import org.springframework.web.bind.annotation.*;
 public class ShopController {
 
     @GetMapping
-    public ResponseEntity<> getMainView(){
+    public ResponseEntity<String> getMainView(){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
     @GetMapping("category")
-    public ResponseEntity<>getCategoryView(@RequestParam String category){
+    public ResponseEntity<String>getCategoryView(@RequestParam String category){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
     @GetMapping("details")
-    public ResponseEntity<>getDetailsView(@RequestParam String productId){
+    public ResponseEntity<String>getDetailsView(@RequestParam String productId){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
 
     @GetMapping("basket")
-    public ResponseEntity<> getBasketView(){
+    public ResponseEntity<String> getBasketView(){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
     @PutMapping
-    public ResponseEntity<> addToBasket(@RequestBody Product product){
+    public ResponseEntity<String> addToBasket(@RequestBody Product product){
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
 
